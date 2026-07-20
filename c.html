@@ -1,46 +1,45 @@
-// ADD-BORDER
-const images = document.querySelectorAll(".photo");
-function AddBorder(e) {
-  e.currentTarget.classList.toggle("active");
+let count = 0;
+const counter = document.querySelector("#counter");
+const Addbtn = document.querySelector(".Addbtn");
+const Minusbtn = document.querySelector(".Minusbtn");
+
+
+function updateCounter() {
+   counter.innerHTML = count;
 }
-images.forEach((e) => {
-  e.addEventListener("click", AddBorder);
-});
-// ADD border without for each
-const img1 = document.getElementById("img1");
-const img2 = document.getElementById("img2");
-function AddBorder(e) {
-  e.classList.toggle("active");
-}
-img1.addEventListener("click", () => {
-  if (img1.style.border === "") {
-    img1.style.border = "5px solid black";
-  }
-  else{
-    img1.style.border = "";
-  }
-  // AddBorder(img1);
-});
-img2.addEventListener("click", () => {
-  AddBorder(img2);
+
+Addbtn.addEventListener("click", () => {
+  count++;
+  updateCounter();
+   if (counter.innerHTML < 0) {
+     document.body.style.backgroundColor = "black";
+     counter.style.color = "white";
+   } else if (counter.innerHTML > 10) {
+     document.body.style.backgroundColor = "red";
+     counter.style.color = "white";
+   } else { 
+     document.body.style.backgroundColor = "white";
+     counter.style.color = "black";
+   }
+  console.log(e);
 });
 
-// SWAP
-const swapBtn = document.querySelector("#swap-img");
-swapBtn.addEventListener("click", () => {
-  const tempSrc = img1.src;
-  img1.src = img2.src;
-  img2.src = tempSrc;
-});
+Minusbtn.addEventListener("click", () => {
+  count--;
+  updateCounter();
+   if (counter.innerHTML < 0 ) {
+     document.body.style.backgroundColor = "black";
+     counter.style.color="white"
+   }
+   else if(counter.innerHTML> 10){
+    document.body.style.backgroundColor = "red";
+     counter.style.color = "white";
 
-// Change BC
-const bcBtn = document.querySelector("#Change-bc");
-bcBtn.addEventListener("click", () => {
-  if (document.body.style.backgroundColor === "black") {
-    document.body.style.backgroundColor = "white";
-  } else {
-    document.body.style.backgroundColor = "black";
-  }
-});
+   }
+    else {
+     document.body.style.backgroundColor = "white";
+     counter.style.color = "black";
 
-//
+   }
+
+});

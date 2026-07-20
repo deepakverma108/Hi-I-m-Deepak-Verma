@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script> 
+    function myFunction(){ alert("HEY");  }
+    </script>
+</head>
+<body>
+  <img src="" alt="img" onabort="myFunction()">
+</body>
+ 
+</html>
