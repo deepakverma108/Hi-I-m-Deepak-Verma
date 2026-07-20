@@ -32,7 +32,7 @@
 ---
 
 📫 How to reach me:
-- Email: `sparsh312003@gmail.com`
+- Email: `deepakverma18@gmail.com`
 - LinkedIn: [linkedin.com/in/deepak-verma-b53a3423a1/](https://www.linkedin.com/in/deepak-verma-b53a3423a1/)
 
 ---
