@@ -1,0 +1,26 @@
+//
+const Aname = document.getElementById("name");
+const demo = document.getElementById("demo");
+const submit = document.getElementById("Submit");
+const pass = document.getElementById("Password");
+const confirmPAss = document.getElementById("Re-Enter");
+
+
+function passwordFormValidation(e) {
+  e.preventDefault();
+
+  if (Aname.value === "") {
+    demo.innerHTML = "First Name has to be entered";
+    return;
+  }
+
+  if (pass.value !== confirmPAss.value) {
+    demo.innerText = "Write correct Password";
+    return;
+  }
+
+  demo.innerText = "Welcome";
+}
+
+
+submit.addEventListener("click", passwordFormValidation);
