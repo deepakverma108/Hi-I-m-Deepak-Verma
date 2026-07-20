@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Sparsh Singh</h1>
+<h1 align="center">Hi 👋, I'm Deepak Verma</h1>
 <h3 align="center">Full Stack Developer | Passionate about building scalable and creative web apps</h3>
 
 ---
