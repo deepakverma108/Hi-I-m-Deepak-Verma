@@ -1,0 +1,46 @@
+// ADD-BORDER
+const images = document.querySelectorAll(".photo");
+function AddBorder(e) {
+  e.currentTarget.classList.toggle("active");
+}
+images.forEach((e) => {
+  e.addEventListener("click", AddBorder);
+});
+// ADD border without for each
+const img1 = document.getElementById("img1");
+const img2 = document.getElementById("img2");
+function AddBorder(e) {
+  e.classList.toggle("active");
+}
+img1.addEventListener("click", () => {
+  if (img1.style.border === "") {
+    img1.style.border = "5px solid black";
+  }
+  else{
+    img1.style.border = "";
+  }
+  // AddBorder(img1);
+});
+img2.addEventListener("click", () => {
+  AddBorder(img2);
+});
+
+// SWAP
+const swapBtn = document.querySelector("#swap-img");
+swapBtn.addEventListener("click", () => {
+  const tempSrc = img1.src;
+  img1.src = img2.src;
+  img2.src = tempSrc;
+});
+
+// Change BC
+const bcBtn = document.querySelector("#Change-bc");
+bcBtn.addEventListener("click", () => {
+  if (document.body.style.backgroundColor === "black") {
+    document.body.style.backgroundColor = "white";
+  } else {
+    document.body.style.backgroundColor = "black";
+  }
+});
+
+//
