@@ -5,9 +5,9 @@
 
 🌱 I’m currently building:
 
-- 🔧 **[EEE](https://github.com/Sparsh313/EEE)** – A curated collection of academic electrical/electronics projects to help EEE students learn hands-on with tech.
-- 💼 **[Ad Manager](https://github.com/Sparsh313/ad-manager)** – A system to manage ad keys and scripts for seamless Google & Meta ad integration.
-- 🛒 **[E-comm](https://github.com/Sparsh313/E-comm)** – A full-fledged MERN stack e-commerce platform with authentication, cart, and payment.
+- 🔧 **[EEE](https://github.com/deepakverma108/EEE)** – A curated collection of academic electrical/electronics projects to help EEE students learn hands-on with tech.
+- 💼 **[Ad Manager](https://github.com/deepakverma108/ad-manager)** – A system to manage ad keys and scripts for seamless Google & Meta ad integration.
+- 🛒 **[E-comm](https://github.com/deepakverma108/E-comm)** – A full-fledged MERN stack e-commerce platform with authentication, cart, and payment.
 
 ---
 
